@@ -269,235 +269,68 @@ img.hm:hover {
 
 
 
-
-
-
-/* Responsive design */
-
-* {
-    box-sizing: border-box;
-}
-
-img {
-    max-width: 100%;
-}
-
-/* Tablets and mobile phones */
-@media screen and (max-width: 768px) {
+/* Mobile only */
+@media screen and (max-width: 600px) {
 
     body {
-        width: 100%;
+        max-width: 100%;
         overflow-x: hidden;
     }
 
-    /* Navigation bar */
-    nav {
-        padding: 12px 8px;
-        gap: 10px;
-        flex-wrap: wrap;
-        justify-content: center;
-        border-radius: 0;
-    }
-
-    nav a {
-        font-size: 14px;
-        text-align: center;
-    }
-
-    /* Main home image */
     img.hm {
-        width: calc(100% - 20px);
+        width: 100%;
         height: auto;
-        margin: 15px auto;
+    }
+
+    .store-grid,
+    .store-grid2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .one, .two, .three, .four,
+    .one1, .two2, .three3, .four4 {
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .store-card h3,
+    .store-card2 h3 {
+        font-size: 14px;
+        overflow-wrap: anywhere;
+    }
+
+    div.me {
+        flex-wrap: wrap;
+    }
+
+    img.me1, img.me2, img.me3 {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
 
     h1 {
         font-size: 30px;
-        padding: 0 10px;
-        overflow-wrap: break-word;
     }
 
-    /* Your three photos */
-    div.me {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 10px;
-        padding: 10px;
-    }
-
-    img.me1,
-    img.me2,
-    img.me3 {
-        width: 100%;
-        height: auto;
-        margin: 0;
-        min-width: 0;
-    }
-
-    /* Center section headings */
     h2 {
         left: 0;
-        text-align: center;
+        margin-left: 15px;
         font-size: 28px;
-        padding: 0 10px;
     }
 
-    /* Clothes and bags grids */
-    .store-grid,
-    .store-grid2 {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 18px 12px;
-        padding: 10px;
-    }
-
-    .store-card,
-    .store-card2 {
-        width: 100%;
-        min-width: 0;
-    }
-
-    .store-card img,
-    .store-card2 img {
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-        display: block;
-        object-fit: cover;
-    }
-
-    .store-card h3,
-    .store-card2 h3 {
-        font-size: 14px;
-        line-height: 1.4;
-        overflow-wrap: anywhere;
-        margin-top: 10px;
-    }
-
-    hr {
-        margin: 20px 0;
-    }
-}
-
-/* Extra small phones */
-@media screen and (max-width: 400px) {
-
-    nav a {
-        font-size: 12px;
-    }
-
-    h1 {
-        font-size: 25px;
-    }
-
-    h2 {
-        font-size: 23px;
-    }
-
-    .store-grid,
-    .store-grid2 {
-        gap: 15px 8px;
-        padding: 8px;
-    }
-
-    .store-card h3,
-    .store-card2 h3 {
-        font-size: 12px;
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 12px;
     }
 }
 
 
-/* Mobile responsive design */
-* {
-    box-sizing: border-box;
-}
 
-body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
 
-/* Main banner */
-img.hm {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
 
-/* Intro images */
-div.me {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
-}
-
-img.me1,
-img.me2,
-img.me3 {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-}
-
-/* Product grids */
-.store-grid,
-.store-grid2 {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 15px;
-    padding: 12px;
-}
-
-/* Product images */
-.store-card img,
-.store-card2 img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin: 10px auto;
-}
-
-/* Product names */
-.store-card h3,
-.store-card2 h3 {
-    font-size: 16px;
-    overflow-wrap: anywhere;
-}
-
-/* Headings */
-h1 {
-    font-size: clamp(26px, 6vw, 40px);
-}
-
-h2 {
-    left: 0;
-    font-size: clamp(24px, 5vw, 36px);
-    margin-left: 15px;
-}
-
-/* Navigation */
-nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    padding: 15px 10px;
-}
-
-nav a {
-    font-size: 14px;
-}
-
-/* Small phones */
-@media (max-width: 400px) {
-    .store-grid,
-    .store-grid2 {
-        gap: 8px;
-        padding: 8px;
-    }
-
-    .store-card h3,
-    .store-card2 h3 {
-        font-size: 13px;
-    }
-}
