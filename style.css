@@ -404,3 +404,100 @@ img {
         font-size: 12px;
     }
 }
+
+
+/* Mobile responsive design */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Main banner */
+img.hm {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Intro images */
+div.me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+img.me1,
+img.me2,
+img.me3 {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/* Product grids */
+.store-grid,
+.store-grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+    padding: 12px;
+}
+
+/* Product images */
+.store-card img,
+.store-card2 img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 10px auto;
+}
+
+/* Product names */
+.store-card h3,
+.store-card2 h3 {
+    font-size: 16px;
+    overflow-wrap: anywhere;
+}
+
+/* Headings */
+h1 {
+    font-size: clamp(26px, 6vw, 40px);
+}
+
+h2 {
+    left: 0;
+    font-size: clamp(24px, 5vw, 36px);
+    margin-left: 15px;
+}
+
+/* Navigation */
+nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 10px;
+}
+
+nav a {
+    font-size: 14px;
+}
+
+/* Small phones */
+@media (max-width: 400px) {
+    .store-grid,
+    .store-grid2 {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .store-card h3,
+    .store-card2 h3 {
+        font-size: 13px;
+    }
+}
