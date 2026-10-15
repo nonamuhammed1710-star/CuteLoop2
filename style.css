@@ -269,18 +269,8 @@ img.hm:hover {
 
 
 
-/* Mobile only */
+
 @media screen and (max-width: 600px) {
-
-    body {
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-
-    img.hm {
-        width: 100%;
-        height: auto;
-    }
 
     .store-grid,
     .store-grid2 {
@@ -289,11 +279,10 @@ img.hm:hover {
         padding: 10px;
     }
 
-    .one, .two, .three, .four,
-    .one1, .two2, .three3, .four4 {
+    .store-card img,
+    .store-card2 img {
         width: 100%;
         height: auto;
-        margin: 10px auto;
     }
 
     .store-card h3,
@@ -306,20 +295,17 @@ img.hm:hover {
         flex-wrap: wrap;
     }
 
-    img.me1, img.me2, img.me3 {
+    img.me1,
+    img.me2,
+    img.me3 {
         width: 100%;
         max-width: 100%;
         height: auto;
     }
 
-    h1 {
-        font-size: 30px;
-    }
-
     h2 {
-        left: 0;
-        margin-left: 15px;
-        font-size: 28px;
+        left: 15px;
+        font-size: 2rem;
     }
 
     nav {
@@ -329,8 +315,4 @@ img.hm:hover {
         padding: 12px;
     }
 }
-
-
-
-
 
